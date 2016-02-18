@@ -28,8 +28,16 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h3>
-<a id="About me" class="anchor" href="#First post" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>First post</h3>
+<a id="About me" class="anchor" href="#Fun with Zipcodes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Fun with Zipcodes</h3>
 
-<p> oh yeah, this is a page to test relative urls</p>
+<p> I was supremely bored during this winter break and decided to have some fun with a little data. I discovered the heaven-sent <i>rvest</i>
+package created by Hadley Wickham and learned some web scraping. I went to <a href = "https://zipatlas.com" target = "_blank">zipatlas.com</a> and was able to find an ordered list of 
+zip codes with the highest percentage of African-Americans in the US. After some scraping and cleaning, I kept every zip that had at 
+least 25% black and had a population above the median and did the same for zip codes with the highest percentage of Hispanics in the 
+US. I found which zip codes between the two matched and stored those as well as the zip codes that were at least 50% Black or Hispanic 
+so that I had all zip codes that were either 50% Black, Hispanic, or both.</p>
+
+<p>Plotting time! I used ggplot to plot the zipcodes and it looks very pretty to me. Let me know what you think. My next post will explore these zip codes a bit further so be on the lookout!</p>
+ <img src = "minority.zip.jpg" alt = "minority.zip" />
   </body>
 </html>
