@@ -28,6 +28,31 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h3>
+          
+          
+<a id="About me" class="anchor" href="#Fun with Zipcodes Part.2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Fun with Zipcodes Part.2</h3>
+<p>This is a continuation of the previous post. I took the same ‘majority minority’ zip codes and decided what else I could add. 
+One available dataset I could find was from the IRS. It included the 100 lowest and highest earning zip codes each. I also did some 
+more web scraping and found all the Planned Parenthood locations in America and converted those to lat-long coordinates (messy code 
+means unnecessary for loops and long computation time. I’ll clean it up later). I did this because I’ve frequently heard people mention 
+how they don’t have a problem with Planned Parenthood, but they just don’t like how the organization targets minority communities.
+I won’t list the statistics or stories I’ve heard because they were never validated but I decided to take primary glance. I looked at
+the PP locations overlaid on top of the low vs high income zips as well as the ‘minority majority’ zips. The two maps are below</p>
+<img src = "images/pp.income.png" alt = "pp.income" />
+<img src = "images/pp.minority.png" alt = "pp.minority" />
+
+<p>You can see that there is some overlap between PP locations and ‘majority minority’ zips but that’s generally in cities with a huge 
+population so that’s not surprising that they’re there. I’m not here to say ‘Wow, definitely targeting minorities” or not, I’m just 
+here to display the data and let you make your own decision. To further improve this preliminary analysis, I’d probably have to 
+everything withing a certain radius that depends on each state’s density. However, I have no idea what radius to use so this is all
+that I’m doing for now. Maybe I’ll pick this up later when I show a social scientist or someone who is just more educated about these 
+topics in general haha.</p>
+
+<p>On a another (small) note, I also looked at which zip codes from the 100 lowest income list were in the list of ‘majority minority’ 
+zips and <strong><u>93 out of the 100 matched</u></strong>. I did the same with the 100 highest income and 3 out of the 100 matched with the ‘majority minority’
+zips. Crazy!</p>
+<hr />
+<br />
 <a id="About me" class="anchor" href="#Fun with Zipcodes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Fun with Zipcodes</h3>
 
 <p> I was supremely bored during this winter break and decided to have some fun with a little data. I discovered the heaven-sent <i>rvest</i>
