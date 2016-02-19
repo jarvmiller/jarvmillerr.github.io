@@ -226,11 +226,18 @@ dl p {
   font-style: italic;
 }
 
-hr {
+/*hr {
   height: 2px;
   margin-bottom: 5px;
   border: none;
   background: url('../images/bg_hr.png') repeat-x center;
+}*/
+hr {
+    border: none;
+    height: 2px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
 }
 
 table {
