@@ -29,6 +29,34 @@
       <section id="main_content" class="inner">
         
         <h3>
+<a id="About me" class="anchor" href="Houston Crime" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Houston Crime (2010)</h3>
+<p>I haven't posted in a while. The last few weeks of school and graduation kept me pretty busy. Anyway, I love making maps so I thought 
+playing with ggmap and its Houston crime dataset would be fun. The data is collected from January-August of 2010. I'll see if I can scrape 
+the data from 2004 (the year before hurricane katrina)-present to see how things fluctuate. Anyway, the first thing I looked at was the tally of each crime 
+throughout Houston. You can see the plot below.</p>
+<img src = "images/crime.count.png" alt = "tally of crime" />
+<p>As you can see, theft is not-surprisingly the most common crime. I was sort of surprised that aggravated assault was more common than robbery but the difference
+is tiny. Next thing I looked at was whether the perpetrators acted during any particular hour of the day. You can see that things slow down
+around the time that people get up and ready for work (5-9 AM ish). </p>
+<img src = "images/crime.hour.png" alt = "time of crime" />
+<p>Now to get into the maps. I made a density plot of crime over the city of Houston. GGmap is so nice and easy to use. I will always be grateful for
+Hadley and his work. Anyway, the light green means a lower frequency of crime in that particular area while red means crime is very frequent there. Hence, we can see 
+that there is some crime before reaching sugarland but the majority of crime is seen in the heart of the city - downtown Houston. This trend sticks even when you take into account
+the different type of crimes. </p>
+<img src = "images/crime.density.png" alt = "crime density plot" />
+<img src = "images/crime.by.off.png" alt = "stratified density plot" />
+<p>Sooo with that in mind, let's look downtown! I decided to forgo a density plot there and just look at the locations of each crime. This was a bad idea
+because of the theft frequency. It pretty much covered the entire map. So looking for an excuse to examine a subset, I decided to focus on violent crimes 
+(inspired by some Harvard link I came across where they analyzed the data for a mapping tutorial). I looked at robbery, aggravated assault, rape, and murder. 
+Tons of crime is at Midtown where the young professionals stay. </p>
+<img src = "images/downtown.violent.png" alt = "downtown crime" />
+<p>The last thing I looked at were a few case studies-esque things. I found the top 10 locations where crimes happen. They rank (highest to lowest): apartment,
+residence/house, apartment parking lot, road/street/sidewalk, driveway, department/discount store, other/unknown, restaurant/cafeteria parking lot, commercial parking lot/garage,
+grocery/supermarket. Out of the 118 locations, these 10 make up 71% of all crime instances. I then made a graph of "crime by location type" for those 10 locations. 
+I also looked up the types of crime that happens at each level of education (elementary vs middle vs high etc). If you have any questions about the data, shoot me an email!  </p>
+
+<hr>
+        <h3>
 <a id="About me" class="anchor" href="NBA Overtime Games" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>NBA Overtime Games</h3>
 <p>I was recently curious about how big the home advantage affects overtime games in the NBA. I went to basketball-reference.com and 
 used rvest to scrape some of the data and then cleaned it using stringr, dplyr, and reshape2. I then found the percentage that each 
@@ -44,6 +72,7 @@ in using any tests since this is the full population of NBA OT games.</p>
 <img src = "images/nba.ot.gif" alt = "nba.ot.gif" />
 <img src = "images/nba.ot.line.png" alt = "nba.ot.line" />
 <hr>
+
 
         <h3>
 <a id="About me" class="anchor" href="Fun with Zipcodes Part 2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Fun with Zipcodes Part 2</h3>
